@@ -1,10 +1,10 @@
 from django.db import models
 
 # Create your models here.
-class Student(model.models):
+class Student(models.Model):
     name = models.CharField(max_length=100)
-    age = models.IntergetField()
-    description = models.IntergetField()
+    age = models.IntegerField()
+    description = models.IntegerField()
     date_enrolled = models.DateTimeField(auto_now = True)
 
     def __str__(self):
